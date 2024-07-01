@@ -1,0 +1,44 @@
+.Main_Menu_div {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(254, 180, 92);
+  background: linear-gradient(
+    135deg,
+    rgba(254, 180, 92, 0.5662640056022409) 0%,
+    rgba(252, 252, 252, 1) 73%,
+    rgba(255, 254, 254, 1) 100%
+  );
+}
+
+.Main_Menu_h3 {
+  font-size: 18px;
+  color: #ffac4c;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 10px;
+}
+
+.Main_Menu_h2 {
+  font-size: 32px;
+  color: black;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.Main_Menu_p {
+  font-size: 18px;
+  width: 50%;
+  color: black;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+
+@media screen and (max-width: 700px) {
+  .Main_Menu_h2{
+    font-size: 24px;
+  }
+}
