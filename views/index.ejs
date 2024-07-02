@@ -11,10 +11,10 @@
     <%- include('Home.ejs') %> 
     <%- include('Features.ejs') %> 
     <%- include('Menu.ejs') %>
-    <%- include('card.ejs') %>
-     <%- include('Testimonials.ejs') %>
-      <%- include('Contact.ejs') %>
-      <%- include('Footer.ejs') %>
+    <%- include('card.ejs', { CardData: CardData }) %>
+    <%- include('Testimonials.ejs') %>
+    <%- include('Contact.ejs') %>
+    <%- include('Footer.ejs') %>
     <!-- Your main content here -->
   </body>
 </html>
