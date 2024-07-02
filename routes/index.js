@@ -20,9 +20,9 @@ router.get("/", async function (req, res, next) {
     const CardData = await CardModel.find({ isTopPriorities: true }).limit(3);
     res.render("index", { CardData });
   } catch (error) {
-    // res.render("index", { title: "Express" });
+    res.render("index", { title: "Express" });
   }
-});
+}); 
 
 router.post(
   "/Create_card",
