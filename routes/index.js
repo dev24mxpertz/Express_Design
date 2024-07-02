@@ -14,15 +14,16 @@ const imagekit = new ImageKit({
   urlEndpoint: process.env.URL_Endpoint,
 });
 
-/* GET home page. */
 router.get("/", async function (req, res, next) {
   try {
     const CardData = await CardModel.find({ isTopPriorities: true }).limit(3);
     res.render("index", { CardData });
   } catch (error) {
-    res.render("index", { title: "Express" });
+    console.error(error);
+    res.render("index", { CardData: [] });
   }
-}); 
+});
+
 
 router.post(
   "/Create_card",
