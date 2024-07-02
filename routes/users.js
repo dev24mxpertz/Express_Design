@@ -32,7 +32,7 @@ run().catch(console.dir);
 
 // Connect mongoose to the same MongoDB instance
 mongoose
-  .connect(uri)
+  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("Mongoose connected to MongoDB!");
   })
